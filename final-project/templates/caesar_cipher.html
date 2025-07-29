@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Caesar
+{% endblock %}
+
+{% block main %}
+<div class="heads container my-5 pt-5">
+    <h1 class="para-title">What Is Caesar Cipher?</h1>
+    <p class="para-cipher">The Caesar Cipher is a substitution cipher used for encryption. It's one of the simplest and most widely known encryption techniques; if not, the simplest and most widely known. Each letter in the original text, is replaced by a letter some fixed number of positions from the original alphabet.</p>
+
+    <h1 class="mt-5 para-title">History</h1>
+    <p class="para-cipher">The Caesar cipher is one of the earliest known of ciphers, it dates back to 100 BC. Julius Caesar used it to send secret messages to his generals in military campaigns, the main function was if the message was in the wrong hands, the opponent wouldn't be able to read it cause of its encryption. Julius Caesar himself employed this cipher with a shift of three, A becomes D when encrypting, and when decrypting D becomes A. </p>
+
+    <h1 class="mt-5 para-title">How Secure Is It?</h1>
+    <p class="para-cipher">In terms of secureness, while historically influential, Caesar cipher is not considered secure by modern standards. Its limited 25 possible keys make a brute-force attack decrypt the message. Caesar cipher uses single alphabet substitution, meaning a letter in its plaintext is only replaced by one letter in the ciphertext; this simplicity makes it very vulnerable</p>
+</div>
+{% endblock %}

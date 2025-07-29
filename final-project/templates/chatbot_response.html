@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Ask AI
+{% endblock %}
+
+{% block main %}
+
+<div class="heads container text-center my-5 pt-5">
+  <div class="card mb-5">
+    <div class="card-body">
+      <p class="text-start">Prompt: {{user_text}}</p>
+      <p class="text-start"><strong>{{gpt_response}}</strong></p>
+    </div>
+  </div>
+
+
+<form action="/tools/chatbot" method="post">
+    <div class="card">
+        <div class="card-body">
+          <h5 class="card-title text-center">Your message:</h5>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" name="user_text" type="text"></textarea>
+          <button class="btn btn-outline-light mt-3" type="submit">Ask AI</button>
+        </div>
+      </div>
+</form>
+</div>
+{% endblock %}

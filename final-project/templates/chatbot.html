@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Ask AI
+{% endblock %}
+
+{% block main %}
+<div class="heads container text-center position-absolute top-50 start-50 translate-middle">
+<form action="/tools/chatbot" method="post">
+    <div class="card">
+        <div class="card-body">
+          <h5 class="card-title text-center">Your message:</h5>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" name="user_text" type="text"></textarea>
+          <button class="btn btn-outline-light mt-3" type="submit">Ask AI</button>
+        </div>
+      </div>
+</form>
+</div>
+{% endblock %}

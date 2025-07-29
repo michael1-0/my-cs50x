@@ -1,0 +1,20 @@
+HTML Tags:
+    -Title tag
+    -I used header, main, footer tags across pages for readability sake.
+     In the homepage, i used an h2 tag for the logo in the nav bar tag, in those tags i used a tags for links to other pages.
+    -In main tag, there are 2 div tags, one of which has an img tag for the logo
+    -After those, inside footer, there is a paragraph tag for text
+
+CSS properties:
+    -I have made every element have margin 0, padding 0 and box-sizing set to border-box for ease of use
+    -Font-family is an external font called Fortune City, it has a font-weight of normal and font-style of normal
+    -For the logo part, i have made it display flex for the div and made it center with justify-content set to center and align-items to center.
+     I made the div to have the height of 70vh so it will not have vertical scrolling as i want it all in one page without scrolling. This is not possible with the footer taking up a space of the viewport block.
+    -I have made the "For the glory of mankind" text animated and if you clicked it, you will be redirected to a unknown page
+    -Header is positioned fixed, so that it you can scroll down and still see the header
+     Width 100% to fill up the width 100%, background set to black, display flex with a z-index of 99 so it will always be in front of any other elements (importance)
+    -I have made some elements have the font monospace and some Fortune City.
+
+Javascript: In the unknown.html, i used javascript to display a typewriter like animation.
+
+Bootstrap: I used some bootstrap for the gallery page and the card component from bootstrap in which i modifed the button style for the "???" page.

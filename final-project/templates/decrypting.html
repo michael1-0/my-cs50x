@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Decrypting
+{% endblock %}
+
+{% block main %}
+<div class="heads container my-5 pt-5">
+    <p class="mb-5"><strong>This decryption will be a symmetric decryption using the Fernet recipe provided by the Python Cryptographic Authority. To decrypt, input your key and your cipher-text (token).</strong></p>
+
+    <form action="/tools/decryptor" method="post">
+      <div class="mb-5">
+        <label  class="form-label">Key:</label>
+        <textarea class="form-control mb-3" rows="2" name="key" type="text"></textarea>
+        <label  class="form-label">Cipher-text:</label>
+        <textarea class="form-control" rows="5" name="cipher_text" type="text"></textarea>
+        <button class="btn btn-outline-light mt-3" type="submit">Decrypt</button>
+      </div>
+    </form>
+    <h2 class="mt-5 para-title">What Is Fernet?</h2>
+    <p>Fernet is a specification for symmetric encryption with an authentication method, symmetric meaning it uses the same key to both encrypt and decrpyt data, authentication meaning it provides an integrity check that the encrpyted data has not been modified. It uses AES-128 in CBC mode; for authentication, it uses HMAC-SHA256 for message authentication. </p>
+
+    <h2 class="mt-5 para-title">How Secure Is It?</h2>
+    <p>In terms of security, it's considered secure when used correctly. Fernet relies heavily on securely managing your encryption keys, never store keys in plain text. It's good for smaller pieces of data, using Fernet for very large data is not ideal.  </p>
+</div>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Vigenere
+{% endblock %}
+
+{% block main %}
+<div class="heads container my-5 pt-5">
+    <h1 class="para-title">What Is Vigenère Cipher?</h1>
+    <p class="para-cipher">The Vigenère cipher is a polyalphabetic substitution cipher, each letter of the plaintext is encoded using a different Caesar cipher. The shift value is determined by the letter of another text (the key). The key also repeats in a cyclical order to match the length of the plaintext.</p>
+
+    <h1 class="mt-5 para-title">History</h1>
+    <p class="para-cipher">The Vigenère cipher was invented by Giovan Battista Bellaso, an italian cryptographer, in 1553. At one point, there was a historical mix-up, it became associated with Blaise De Vigenère (a French diplomat and cryptographer). Vigenère described a similar autokey cipher, but the maker was Bellaso. For three centuries, the Vigenère cipher was indecipherable. It earned the nickname "le chiffrage indéchiffrable", meaning French for the indecipherable cipher.</p>
+
+    <h1 class="mt-5 para-title">How Secure Is It?</h1>
+    <p class="para-cipher">Despite its reputation as the indecipherable cipher, the Vigenère cipher is not highly secure by modern standards. The strength of the cipher depends on the length of the key, if the key is short, it's vulnerable to attacks. Because it exhibits patterns, we can perform frequency analysis very easily, especially if the key repeats frequently.</p>
+</div>
+{% endblock %}

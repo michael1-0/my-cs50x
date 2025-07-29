@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    ChaCha20
+{% endblock %}
+
+{% block main %}
+<div class="heads container my-5 pt-5">
+    <h1 class="para-title">What Is ChaCha20 Cipher?</h1>
+    <p class="para-cipher">ChaCha20 is a newer more modern stream cipher known for its speed, security, and its easy implementation. Similar to RC4, ChaCha20 encrypts data one byte or bit at a time. It is used in many protocols like TLS 1.3, SSH, WireGuard and increasingly adopted for many apllications due to its efficiency and speed.</p>
+
+    <h1 class="mt-5 para-title">History</h1>
+    <p class="para-cipher">The story starts with Salsa20, its predecessor, designed by the same creator Daniel J. Bernstein in 2005. Salsa20 was submitted to the eStream comptetion, aimed at finding new, stream ciphers that have performs good in a large scale. ChaCha20 retained the core of Salsa20; speed, simplicity and security, while aiming to address potential weakness through analysis.</p>
+
+    <h1 class="mt-5 para-title">How Secure Is It?</h1>
+    <p class="para-cipher">ChaCha20 is considered a very secure stream cipher. So far, there are no known cryptanalytic attacks that are practical and also weaken ChaCha20 significantly. Extensive analysis by cryptographers has been done to the cipher and it has been given a good feedback. ChaCha20 was also designed with lessons that older ciphers needed to learn from, it aims to resist various attacks like differential cryptanalysis. </p>
+</div>
+{% endblock %}

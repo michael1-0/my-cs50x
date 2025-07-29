@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    RC4
+{% endblock %}
+
+{% block main %}
+<div class="heads container my-5 pt-5">
+    <h1 class="para-title">What Is RC4 Cipher?</h1>
+    <p class="para-cipher">RC4 (Rivest Cipher 4 or ARFOUR) is a stream cipher that was once quite popular but it's now considered insecure. RC4 is a stream cipher, meaning unlike block ciphers that encrypt data in a fixed size block, it encrypts  data one byte at a time, making them faster. Due to its speed and simplicity, RC4 was used widely in protocols like SSL/TLS and WEP (wifi security).</p>
+
+    <h1 class="mt-5 para-title">History</h1>
+    <p class="para-cipher">The RC4 was designed by Ron Rivest, it was created in 1987 for RSA security. The beginning, RC4 was a proprietary algorithm, kept as a secret. In September 1994, the design of RC4 was leaked anonymously onto Cyphepunks mailing list and it spread further from then on, on the internet. The leaked algorithm revealed a remarkably simple and efficient, making it interesting to developers.</p>
+
+    <h1 class="mt-5 para-title">How Secure Is It?</h1>
+    <p class="para-cipher">The RC4 is gneeral considered insecure for the modern era. RC4 does not produce a truly random stream of bytes. Ceratin subtle biases exist in the output, that will become more and more exploitable with larger encrypted data. There are also classes of weak keys that have lead to easily  breakable states in the RC4 algorithm.  The way RC4 was implemented within protocols like WEP created additional points of attack, highlighting the dangers of how a cipher is used.</p>
+</div>
+{% endblock %}

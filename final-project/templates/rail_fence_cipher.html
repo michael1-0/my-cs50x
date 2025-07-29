@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Rail Fence Cipher
+{% endblock %}
+
+{% block main %}
+<div class="heads container my-5 pt-5">
+    <h1 class="para-title">What Is Rail Fence Cipher?</h1>
+    <p class="para-cipher">The Rail Fence cipher is a transposition cipher. The name is derived from the manner in which encryption is performed, it's like a spike fence with different heights; forming a zigzag pattern. The Rail Fence cipher rearranges the order of the alphabets to obtain the ciphertext based on a numeric key. The plaintext is written downwards and diagonally on successive rails of an imaginary fence. When reaching the bottom rail, the direction changes to upgwards diagonally (the aforementioned zigzag pattern).</p>
+
+    <h1 class="mt-5 para-title">History</h1>
+    <p class="para-cipher">The Rail Fence cipher was invented in ancient times, it has been used for centuries. The Greeks, especially, used this cipher and even created a special tool called the scytale. The scytale was a physical device, nowadays, the Rail Fence cipher is implemented by using a piece of paper.</p>
+
+    <h1 class="mt-5 para-title">How Secure Is It?</h1>
+    <p class="para-cipher">The Rail fence cipher is a very basic form of encryption, its security is very low. The Rail Fence cipher operates on a simple transposition principle. The security of the Rail Fence cipher depends on the number of rows used, if the key (the number of rails) is known, the cipher can be easily decrypted and its lack of key management makes it challenging to make it secure.</p>
+</div>
+{% endblock %}

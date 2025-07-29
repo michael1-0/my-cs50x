@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    DES
+{% endblock %}
+
+{% block main %}
+<div class="heads container my-5 pt-5">
+    <h1 class="para-title">What Is Des Cipher?</h1>
+    <p class="para-cipher">The DES Cipher (Data Encryption Standard) is a type of symmetric-key block cipher that has become a historical piece in cryptography. DES operates on a fixed-size blocks of data, specifically 64-bit blocks. It takes a 64-bit plaintext block and a key, through a seires of complex operations, transform it into the same 64-bit ciphertext block. DES uses the same key for enryption and decryption. </p>
+
+    <h1 class="mt-5 para-title">History</h1>
+    <p class="para-cipher">In the early  1970s, the National Institute of Standards and Technology (NIST) saw some need for a government wide standard cipher to protect sensitive data. IBM created this cipher, they had been researching cryptography and developed a cipher caleld "Lucifer". They submitted a modfiied version of Lucifer, response to NIST's proposals.</p>
+
+    <h1 class="mt-5 para-title">How Secure Is It?</h1>
+    <p class="para-cipher">The Data Encryption Standard was secure for its time, now it's no longer secure; the primary weakness of DES is its small key size. IT uses a 56-bit key (plus 8 parity bits), offering 2^56 possible keys. Modern computer advancements have made brute-force attacks against DES very feasible</p>
+</div>
+{% endblock %}

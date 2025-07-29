@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th class="text-start">Symbol</th>
+            <th class="text-end">Shares</th>
+            <th class="text-end">Price</th>
+            <th class="text-end">TOTAL</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- TODO: Loop through the database entries to display them in this table -->
+        {% for symbol in symbols%}
+            <tr>
+                <th class="text-start">{{ symbol["symbol"].upper() }}</th>
+                <th class="text-end">{{ symbol["SUM(share)"] }}</th>
+                <th class="text-end">{{ symbol["price"] | usd}}</th>
+                <th class="text-end">{{ symbol["SUM(total)"] | usd }}</th>
+            </tr>
+        {% endfor %}
+    </tbody>
+    <tfoot>
+        <tr>
+            <td class="border-0 fw-bold text-end" colspan="3">Cash</td>
+            <td class="border-0 text-end">{{usercash[0]["cash"] | usd}}</td>
+        </tr>
+        <tr>
+            <td class="border-0 fw-bold text-end" colspan="3">TOTAL</td>
+            <td class="border-0 text-end">{{total | usd}}</td>
+        </tr>
+    </tfoot>
+</table>
+{% endblock %}

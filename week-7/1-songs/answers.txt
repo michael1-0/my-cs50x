@@ -1,0 +1,8 @@
+We could assume things like Energy, Danceability, Valence and Tempo
+make what we call Audio Aura; the values of those that are high mean the song
+is on the positive side and low values of those variables mentioned mean the audio aura
+is more negative.
+
+But, we don't have many samples of songs only 100, which might not be enough to
+determine the type of Aura. And just because a song has low Valence, Energy and danceability
+it does not mean user is not uplifted by that song.

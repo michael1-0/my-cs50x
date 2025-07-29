@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    AES Cipher
+{% endblock %}
+
+{% block main %}
+<div class="heads container my-5 pt-5">
+    <h1 class="para-title">What Is AES Cipher?</h1>
+    <p class="para-cipher">The Advanced Encryption Standard (AES) is a widely used symmetric-key block cipher algorithm. AES operates as a symmetric-key algorithm, the same key is used for both encryption and decryption. The design behind AES is a substitution-permutation network. AES has a fixed block size of 128 bits, the key length can be 128, 192, 256 bits. The choice of key length affects the number of rounds in the encryption process (10 rounds for 128-bit key, 12 rounds for 192-bit and 14 rounds for 256-bit key).</p>
+
+    <h1 class="mt-5 para-title">History</h1>
+    <p class="para-cipher">In the late 1990s, the National Institute of Standards and Technology (NIST) had a competition to find the best publicly available symmetric-key encryption algorithm to replace the old Data Encryption Standard (DES). The competition was in 1997, and various cryptographic designs were evaluated. The Rijndael cipher, developed by Belgian cryptographers Joan Daeman and Vincent Rijmen reigned as the winner among the proposals.</p>
+
+    <h1 class="mt-5 para-title">How Secure Is It?</h1>
+    <p class="para-cipher">AES is widely regarded as a secure and robust encryption algorithm. AES has undergone extensive cryptoanalysis since its birth. No practical attacks have significantly weaken AES, the best attack is brute force, but the computational complexity makes it impossible with current hardware power. However, AES is not quantum-resistant, quantum computers could break AES by solving the mathematical problem.</p>
+</div>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    What Is Cryptography?
+{% endblock %}
+
+{% block main %}
+<div class="heads container my-5 pt-5">
+    <h1 class="para-title">What Is Cryptography?</h1>
+    <p class="para-cipher">Cryptography is a practice of creating and using techniques in order to seucre communication, to protect data from being read by unintended user. It involves randomizing or scrambling ordinary plain-text into a coded, encrypted or unreadable format, which is called the cipher-text using complex algorithms. A person with the right key can access it.</p>
+
+    <h1 class="mt-5 para-title">How Important Is It?</h1>
+    <p class="para-cipher">In this digital world, cryptography is important. It involves integrity, confidentiality. Only autorized people can access information that needs to be kept as secret because its sensitivity. It also prevents unauthorized changes to data.</p>
+
+    <h1 class="mt-5 para-title">Types of Cryptography</h1>
+    <p class="para-cipher"><li><strong>Symmetric-key Cryptography:</strong><ul class="mt-1">It uses a single key for both encryption and decryption. With this, the key needs to be secured by both parties. Symmetric-key algorithms</ul></li></p>
+    <p class="para-cipher"><li><strong>Asymmetric-key Cryptography:</strong><ul class="mt-1">It uses a pair of related keys: public keys, which are widely distributed keys and used for encryption; and private key, used for decryptiion.</ul></li></p>
+    <p class="para-cipher"><li><strong>Hash Function:</strong><ul class="mt-1">Hash functions take some amount of data and produce a fixed-size output which is named a hash. It is not for encryption, hashing is reversible. Hash functions are useful for storing passwords, to know if user's input is equal to the hashed plain-text password they have registered before.</ul></li></p>
+
+</div>
+{% endblock %}

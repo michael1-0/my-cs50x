@@ -1,0 +1,193 @@
+@font-face {
+    font-family: 'Nier';
+    src: url("font/FortuneCity.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes fade {
+    0%, 100% { opacity: 0 }
+    50% { opacity: 1 }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nier";
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+#text {
+    opacity: 1;
+    animation: fade 2s infinite;
+
+}
+
+#text:hover {
+    animation-play-state: initial;
+}
+
+#logos {
+    width: 200px;
+    position: absolute;
+    bottom: 33vh;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.yor {
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    font-family: monospace;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: grey;
+}
+
+footer {
+    position: sticky;
+    top: 100%;
+    padding-left: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    font-family: monospace;
+}
+
+/* about page */
+
+.para {
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+.para h2 {
+    padding-top: 100px;
+    margin-bottom: 15px;
+}
+
+.para p {
+    font-size: 15px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* gallery */
+
+.emptyDiv {
+    height: 200px;
+}
+
+.gallery {
+    padding: 0 80px 150px 80px;
+}
+
+.gallery img {
+    max-width: 100%;
+    background-color: #dcdcdc;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+
+/* ??? */
+
+.one {
+    display: flex;
+
+    padding-top: 86.4px;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.buttonx {
+    background-color: #000000;
+    border-color: #000000;
+}
+
+.buttonx:hover {
+    background-color: #dcdcdc;
+    border-color: #000000;
+    color: #000000;
+}
+
+/* secret */
+
+.text {
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20%;
+    text-align: center;
+}
+
+#bts {
+    position: absolute;
+    bottom: 97.6%;
+    background-color: black;
+    color: white;
+    padding: 2px 5px 2px 5px;
+    font-family: monospace;
+    border-radius: 10px;
+}
+
+#bts:hover {
+    color: #dcdcdc;
+    background-color: #3A3B3C;
+}
+

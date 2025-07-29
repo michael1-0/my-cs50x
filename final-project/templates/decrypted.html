@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Decrypted
+{% endblock %}
+
+{% block main %}
+<div class="heads container my-5 pt-5">
+    <div class="mb-3">
+        <label for="disabledTextInput" class="form-label">Key:</label>
+        <textarea disabled class="form-control disabled-forms" type="text" rows="6">{{key}}</textarea>
+    </div>
+    <div class="mb-3">
+        <label for="disabledTextInput" class="form-label">Cipher-text:</label>
+        <textarea disabled class="form-control disabled-forms" type="text" rows="5">{{cipher_text}}</textarea>
+    </div>
+    <div class="mb-3">
+        <label for="disabledTextInput" class="form-label">Decrypted Message:</label>
+        <textarea disabled class="form-control disabled-forms" type="text" rows="2">{{decryption}}</textarea>
+    </div>
+
+
+    <a href="/tools/decryptor" class="btn btn-outline-light">Decrypt again</a>
+</div>
+{% endblock %}
