@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: It is the slowest, as we can see by the real time output using the time command, and it performs better in sorted data compared to selection sort.
+
+sort2 uses: Merge Sort
+
+How do you know?: It is the fastest and most efficient algorithm for sorting.
+
+sort3 uses: Selection Sort
+
+How do you know?: It is the second slowest sorting algorithm compared to the two.
